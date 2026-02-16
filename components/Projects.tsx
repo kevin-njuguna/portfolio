@@ -77,11 +77,9 @@ export default function Projects() {
   return (
     <section className="mt-32">
 
-      <h2 className="text-sm text-green-500 mb-2">PROJECTS</h2>
-
-      <h3 className="text-3xl font-semibold mb-12">
-        Selected Work
-      </h3>
+      <h2 className="text-sm text-slate-400 font-semibold mb-12">
+        PROJECTS
+      </h2>
 
       {projects.map((project) => (
         <ProjectCard key={project.title} {...project} />
