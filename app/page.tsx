@@ -1,14 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <>
     <Navbar/>
     <Hero/>
-    <div className="min-h-screen flex items-center justify-center">
-      <p>Hello World</p>
-    </div>
+    <Projects/>
     </>
   );
 }
