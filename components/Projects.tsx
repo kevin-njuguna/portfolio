@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
@@ -35,11 +35,7 @@ const projects = [
     description:
       "Digital platform for preserving stories, artifacts, and cultural history in structured collections.",
     stack: ["Next.js", "Node", "MongoDB", "Tailwind"],
-    highlights: [
-      "Media uploads",
-      "Story collections",
-      "Searchable archives",
-    ],
+    highlights: ["Media uploads", "Story collections", "Searchable archives"],
     github: "https://github.com/Past-Lens/past_lens",
     live: "https://pastlens.vercel.app/",
   },
@@ -71,20 +67,16 @@ const projects = [
     github: "https://github.com/kevin-njuguna/zaph-tours",
     live: "https://zaph-tours-opal.vercel.app/",
   },
-]
+];
 
 export default function Projects() {
   return (
-    <section className="mt-32">
-
-      <h2 className="text-sm text-slate-400 font-semibold mb-12">
-        PROJECTS
-      </h2>
+    <section id="projects" className="mt-32">
+      <h2 className="text-sm text-slate-400 font-semibold mb-12">PROJECTS</h2>
 
       {projects.map((project) => (
         <ProjectCard key={project.title} {...project} />
       ))}
-
     </section>
-  )
+  );
 }

@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { PT_Sans } from 'next/font/google';
+import { PT_Sans } from "next/font/google";
 import "./globals.css";
-
-
+import AiAssistant from "@/components/AiAssistant";
 
 const ptSans = PT_Sans({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-pt-sans',
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-pt-sans",
 });
 
 const geistSans = Geist({
@@ -33,11 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
-        className={`${ptSans.variable} ${geistMono.variable} antialiased`}
-      >
-      <div className="max-w-5xl mx-auto p-6 ">
-        {children}
+      <body className={`${ptSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="max-w-5xl mx-auto p-6 ">
+          {children}
+          <AiAssistant />
         </div>
       </body>
     </html>
