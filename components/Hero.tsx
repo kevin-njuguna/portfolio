@@ -16,11 +16,17 @@ const Hero = () => {
         I build scalable web applications and backend systems with modern
         technologies.
       </p>
-
-      <button className="flex w-fit border gap-1 border-green-700 text-green-700  px-6 py-2 rounded-xl hover:bg-green-700 hover:text-black transition mx-auto cursor-pointer mb-30">
-        <FileText />
-        View CV
-      </button>
+      <a
+        href="https://drive.google.com/file/d/1l-TTlvetFUgb42fAWY75hCzF-3U8E8Bi/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block w-fit mx-auto"
+      >
+        <button className="flex w-fit border gap-1 border-green-700 text-green-700  px-6 py-2 rounded-xl hover:bg-green-700 hover:text-black transition mx-auto cursor-pointer mb-30">
+          <FileText />
+          View CV
+        </button>
+      </a>
       <a href="#projects">
         <button className="cursor-pointer w-fit mx-auto group">
           <p className="text-gray-500 font-semibold text-[.7rem]  group-hover:text-green-500">
